@@ -6,29 +6,32 @@ import minimist  from "minimist";
 const input = minimist(process.argv.slice(2));
 
 if(input.h || input.help){
-    console.log('Usage: node-rpsls [SHOT] ' +
-        '\nPlay the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)! \n \n  ' +
-        '-h, --help      display this help message and exit \n  ' +
-        '-r, --rules     display the rules and exit \n\n' +
-        'Examples:\n  node-rpsls       Return JSON with single player RPS result. ' +
-        '\n                  e.g. {"player":"rock"} \n  node-rpsls rock   ' +
-        'Return JSON with results for RPS played against a simulated opponent. ' +
-        '\n                  e.g {"player":"rock","opponent":"Spock","result":"lose"}');
+    console.log('Rules for the Lizard-Spock Expansion of Rock Paper Scissors:\n\n',
+        ' - Scissors CUTS Paper\n',
+        ' - Paper COVERS Rock\n',
+        ' - Rock SMOOSHES Lizard\n',
+        ' - Lizard POISONS Spock\n',
+        ' - Spock SMASHES Scissors\n',
+        ' - Scissors DECAPITATES Lizard\n',
+        ' - Lizard EATS Paper\n',
+        ' - Paper DISPROVES Spock\n',
+        ' - Spock VAPORIZES Rock\n',
+        ' - Rock CRUSHES Scissors');
     process.exit(0);
 }
 
 if(input.r || input.rules){
-    console.log('Rules for the Lizard-Spock Espansion of Rock Paper Scissors:\n\n  ' +
-        '- Scissors CUTS Paper \n  ' +
-        '- Paper COVERS Rock\n  ' +
-        '- Rock SMOOSHES Lizard\n  ' +
-        '- Lizard POISONS Spock\n  ' +
-        '- Spock SMASHES Scissors\n  ' +
-        '- Scissors DECAPITATES Lizard\n  ' +
-        '- Lizard EATS Paper\n  ' +
-        '- Paper DISPROVES Spock\n  ' +
-        '- Spock VAPORIZES Rock\n  ' +
-        '- Rock CRUSHES Scissors');
+    console.log('Rules for the Lizard-Spock Expansion of Rock Paper Scissors:\n\n',
+        ' - Scissors CUTS Paper\n',
+        ' - Paper COVERS Rock\n',
+        ' - Rock SMOOSHES Lizard\n',
+        ' - Lizard POISONS Spock\n',
+        ' - Spock SMASHES Scissors\n',
+        ' - Scissors DECAPITATES Lizard\n',
+        ' - Lizard EATS Paper\n',
+        ' - Paper DISPROVES Spock\n',
+        ' - Spock VAPORIZES Rock\n',
+        ' - Rock CRUSHES Scissors');
     process.exit(0);
 }
 
