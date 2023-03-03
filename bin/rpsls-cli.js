@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { rpsls } from '../lib/rpsls';
+import { rpsls } from '../lib/rpsls.js';
 import minimist  from "minimist";
 
 // take input
@@ -10,7 +10,7 @@ if(input.h || input.help){
         '\nPlay the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)! \n \n  ' +
         '-h, --help      display this help message and exit \n  ' +
         '-r, --rules     display the rules and exit \n\n' +
-        'Examples: \n  node-rpsls       Return JSON with single player RPS result. ' +
+        'Examples:\n  node-rpsls       Return JSON with single player RPS result. ' +
         '\n                  e.g. {"player":"rock"} \n  node-rpsls rock   ' +
         'Return JSON with results for RPS played against a simulated opponent. ' +
         '\n                  e.g {"player":"rock","opponent":"Spock","result":"lose"}');
